@@ -7,6 +7,10 @@
 - Briefly describe your initial UML design.
 - What classes did you include, and what responsibilities did you assign to each?
 
+A user should be able to register a pet with the app, schedule an activity such as a walk, and receive reminders on basic pet care.
+
+Classes: Owner (stores owner information), Pet (stores pet information), Task (outlines the structure for a generic task), Schedule (defines a streamline for multiple tasks to fulfill a day)
+
 **b. Design changes**
 
 - Did your design change during implementation?
