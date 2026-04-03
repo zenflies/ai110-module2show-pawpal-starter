@@ -16,6 +16,8 @@ Classes: Owner (stores owner information), Pet (stores pet information), Task (o
 - Did your design change during implementation?
 - If yes, describe at least one change and why you made it.
 
+Pet-Owner linkage was created bidirectionally for additional clarity.
+
 ---
 
 ## 2. Scheduling Logic and Tradeoffs
