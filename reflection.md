@@ -48,10 +48,14 @@ catch near-conflicts, but exact-overlap detection covers the most obvious errors
 - How did you use AI tools during this project (for example: design brainstorming, debugging, refactoring)?
 - What kinds of prompts or questions were most helpful?
 
+I used the AI tools throughout the entire process, including design brainstorming and debugging. I would run the structured code myself, identifying any flaws and worked through with CoPilot to detect anomalies.
+
 **b. Judgment and verification**
 
 - Describe one moment where you did not accept an AI suggestion as-is.
 - How did you evaluate or verify what the AI suggested?
+
+The AI at one point had suggested changes that obstructed the functionality of task priorities. I evaluated this through unit testing to identify if the sorted order of some sample tasks make sense.
 
 ---
 
@@ -62,10 +66,14 @@ catch near-conflicts, but exact-overlap detection covers the most obvious errors
 - What behaviors did you test?
 - Why were these tests important?
 
+I tested behaviors that related to the core functionalities of the program, especially pertaining to the creation of a task and list scheduling. These tests are especially important for human-in-the-loop verification, proving the functionality works. 
+
 **b. Confidence**
 
 - How confident are you that your scheduler works correctly?
 - What edge cases would you test next if you had more time?
+
+I am confident the scheduler works, a few test cases I would try would to be many tasks at once during a day and trying an abnormally long task.
 
 ---
 
@@ -75,10 +83,16 @@ catch near-conflicts, but exact-overlap detection covers the most obvious errors
 
 - What part of this project are you most satisfied with?
 
+I am most satisfied with the creation of a schedule that incorporates the tasks I create.
+
 **b. What you would improve**
 
 - If you had another iteration, what would you improve or redesign?
 
+I would create a more complex AI layout to prevent simple scrolling to navigate the page. 
+
 **c. Key takeaway**
 
 - What is one important thing you learned about designing systems or working with AI on this project?
+
+AI tools are highly capable, but they are not infallible. It is ultimately the responsibility on the person to understand the subsystem and use it as a tool.
