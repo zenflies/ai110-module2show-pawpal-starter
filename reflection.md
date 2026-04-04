@@ -29,8 +29,15 @@ Pet-Owner linkage was created bidirectionally for additional clarity.
 
 **b. Tradeoffs**
 
-- Describe one tradeoff your scheduler makes.
-- Why is that tradeoff reasonable for this scenario?
+The conflict detector only flags tasks whose *time windows overlap* (start_time + duration_minutes).
+It does not detect softer conflicts such as two high-effort tasks back-to-back with no rest, or tasks
+that share a pet but whose combined duration would exhaust the owner's energy even if they don't
+strictly overlap on the clock.
+
+This tradeoff is reasonable for the current scope: a lightweight pet-care planner needs to warn about
+hard scheduling impossibilities (two things literally at the same time) without requiring the owner
+to model fatigue or travel time. A future version could add a minimum "buffer" gap between tasks to
+catch near-conflicts, but exact-overlap detection covers the most obvious errors with minimal complexity.
 
 ---
 
